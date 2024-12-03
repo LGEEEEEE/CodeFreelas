@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observe e resolva o código do cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="47linhas.css">
+    <link rel="shortcut icon" href="codefreelas.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="linhas.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">CodeFreelas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="linkfreelancer.html">Link para os freelancers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="precos.html">Link para os clientes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="politica.html">Política de Privacidade</a>
+                <a class="dropdown-item" href="contatos.html">Contatos</a>
+              </div>
+            </li>
+          </ul>
+          
+        <a href="signin.html">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="">Login</button>
+            </a>
+          
+        </div>
+      </nav>
+<br><br><br><br><br>
+
+     
+
+        <div class="row">
+          <div class="col"><h3>Observe a demanda do cliente:</h3><textarea readonly rows="47" cols="95">#include <iostream>
+            #include <vector>
+            
+            using namespace std;
+            
+            int main() {
+            int n;
+            cout << "Digite o tamanho da lista: ";
+            cin >> n;  // Erro: nenhuma validação do valor de entrada
+            vector<int> numbers;
+            for (int i = 0; i < n; i++) {
+            cout << "Digite o elemento " << i + 1 << ": ";
+            int num;
+            cin >> num;
+            numbers.push_back(num); // Nenhum tratamento de erro em entradas
+            }
+            
+            int soma = 0;  // Variável para soma dos números pares
+            for (int i = 0; i <= n; i++) { // Erro: i <= n pode causar estouro
+            if (numbers[i] % 2 == 0) // Erro: e se o vetor estiver vazio?
+            soma + numbers[i]; // Erro: operador "+" ao invés de "+="
+            }
+            
+            cout << "A soma dos números pares é: " soma << endl; // Erro: falta o operador de concatenação
+            
+            // Função inútil abaixo que nunca é usada
+            void printReverse(vector<int> vec) {
+            for (int i = vec.size(); i >= 0; i--) { // Erro: i nunca alcança 0
+            cout << vec[i] << " "; // Erro: possível acesso fora dos limites do vetor
+            }
+            }
+            
+            // Linhas extras e confusas começam aqui:
+            for (int i = 0; i < 200; i++) {  // Loop para gerar mais linhas
+            for (int j = 0; j < 1; j++) { // Desnecessário
+            cout << "Linha desnecessária " << j << endl; // Sem utilidade
+            }
+            }
+            
+            // Repetição de código ineficaz e propenso a erro
+            for (int i = 0; i < 100; i++) { // Apenas para aumentar linhas
+            cout << "Isso deveria ser relevante, mas não é." << endl;
+            }
+            
+            return 0; // Fim do programa
+            }
+            </textarea></div>
+
+
+          <div class="col"> <h3>E coloque a solução pro código</h3><textarea rows="47" cols="90">
+            
+          </textarea></div>
+          
+
+        
+        </div>
+        <br>
+        
+        <div class="container">
+          <a class="btn btn-primary btn-lg" href="checkin47.html" role="button">Clique para colocar a demanda</a>
+        </div>
+
+    
+
+
+
+      
+    
+</body>
+</html>

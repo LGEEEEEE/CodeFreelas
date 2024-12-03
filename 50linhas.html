@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observe e resolva o código do cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="linhas.css">
+    <link rel="stylesheet" href="47linhas.css">
+    <link rel="shortcut icon" href="codefreelas.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">CodeFreelas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="linkfreelancer.html">Link para os freelancers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="precos.html">Link para os clientes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="politica.html">Política de Privacidade</a>
+                <a class="dropdown-item" href="contatos.html">Contatos</a>
+              </div>
+            </li>
+          </ul>
+          
+        <a href="signin.html">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="">Login</button>
+            </a>
+          
+        </div>
+      </nav>
+<br><br><br><br><br>
+
+     
+
+        <div class="row">
+          <div class="col"><h3>Observe a demanda do cliente:</h3><textarea readonly rows="50" cols="95">
+            # Programa para calcular o fatorial de um número
+# Feito com 52 linhas :)
+
+def fatorial(n):
+    """Calcula o fatorial de um número."""
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial(n - 1)
+
+def validar_entrada():
+    """
+    Lê a entrada do usuário e valida 
+    se é um número inteiro não-negativo.
+    """
+    while True:
+        try:
+            valor = int(input("Digite um número inteiro não-negativo: "))
+            if valor < 0:
+                print("Por favor, digite um número não-negativo.")
+            else:
+                return valor
+        except ValueError:
+            print("Entrada inválida. Tente novamente.")
+
+def menu():
+    """
+    Mostra o menu principal ao usuário.
+    """
+    print("\n" + "=" * 30)
+    print("       CALCULADORA DE FATORIAL")
+    print("=" * 30)
+    print("1. Calcular fatorial")
+    print("2. Sair")
+    print("=" * 30)
+
+def main():
+    """
+    Função principal que coordena o programa.
+    """
+    while True:
+        menu()
+        opcao = input("Escolha uma opção (1 ou 2): ")
+
+        if opcao == "1":
+            numero = validar_entrada()
+            resultado = fatorial(numero)
+            print(f"O fatorial de {numero} é {resultado}.")
+        elif opcao == "2":
+            print("Obrigado por usar a calculadora de fatorial. Até logo!")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
+# Ponto de entrada do programa
+if __name__ == "__main__":
+    main()
+
+            </textarea></div>
+
+
+          <div class="col"> <h3>E coloque a solução pro código</h3><textarea rows="50" cols="90">
+            
+          </textarea></div>
+        </div>
+
+        <div class="container">
+            <a class="btn btn-primary btn-lg" href="checkin50.html" role="button">Clique para colocar a demanda</a>
+        </div>
+
+    
+
+
+
+      
+    
+</body>
+</html>

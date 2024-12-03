@@ -1,0 +1,309 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="codefreelas.ico">
+
+
+    <title>Realize seu pagamento</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">CodeFreelas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="linkfreelancer.html">Link para os freelancers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="precos.html">Link para os clientes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="politica.html">Política de Privacidade</a>
+              <a class="dropdown-item" href="contatos.html">Contatos</a>
+            </div>
+          </li>
+        </ul>
+        
+      <a href="signin.html">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="">Login</button>
+          </a>
+        
+      </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="codefreelas.png" alt="" width="72" height="72">
+        <h2>Página de checkout</h2>
+        <p class="lead">Faça o pagamento da sua demanda com os códigos</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Seu carrinho</span>
+            <span class="badge badge-secondary badge-pill">1</span>
+          </h4>
+          <ul class="list-group mb-3">
+            
+            
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Ajuda Master</h6>
+                <small class="text-muted">Mais de 1500 linhas de código</small>
+              </div>
+              <span class="text-muted">$20</span>
+            </li>
+            
+              
+            
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Código de Promoção">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Resgatar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Enderço da Cobrança</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Primeiro Nome</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  O primeiro nome é obrigatório
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Ultimo nome</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  O ultimo nome é obrigatório
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Seu username é obrigatório.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Por favor coloque um email válido.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Endereço</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Por favor coloque o endereço da cobrança.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Endereço 2 <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">País</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Escolha...</option>
+                  <option>United States</option>
+                  <option value="">Brasil</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Estado</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Escolha...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor coloque um estado válido
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">CEP</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  O CEP é obrigatório.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">O endereço de cobrança é o mesmo que o de cadastro</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Salvar essas informações para a próxima vez</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Cartão de crédito</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Cartão de débito</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">Paypal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Nome no cartão</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Nome completo como escrito no cartão</small>
+                <div class="invalid-feedback">
+                  Nome no cartão é obrigatório
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Número do cartão de crédito</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Cartão de crédito é obrigatório
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Data de validade</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                A data de validade é obrigatória
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <small class="text-muted">Código de três digitos atrás do cartão</small>
+                <div class="invalid-feedback">
+                  Código de segurança é obrigatório
+                </div>
+              </div>
+            </div>
+            
+            <a class="btn btn-primary btn-lg btn-block" href="pago.html" role="button">Continue para realizar o pagamento</a>
+          </form>
+        </div>
+      </div>
+
+      <br><br>
+
+      <hr class="mb-4">
+
+      <footer>
+    
+    
+        <p><strong>© 2024 CodeFreelas - O seu site de freelance's.  <br>CPNJ: 12.345.678/0001-90<br>
+            Rua das Palmeiras, 123 <br>
+            Bairro Jardim Encantado,
+            Cidade de Sol, DF 98765-432        
+        </strong></p>
+           
+    
+               <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+       <ul class="social_icon">
+         <li><a href="https://api.whatsapp.com/send?phone=5561996341798" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+         <li><a href="https://www.instagram.com/_.lgbalbino._/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+         
+         
+       </ul>
+    </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
